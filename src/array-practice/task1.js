@@ -14,3 +14,7 @@
  * console.log(any([0, 0, 1, 0])); -> true
  * console.log(any([0, 0, 0, 0])); -> false
  */
+
+export default function any(array, arrayCondition = el => !!el) {
+  return !!array.filter(arrayCondition).length;
+}

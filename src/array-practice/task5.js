@@ -15,3 +15,19 @@
  * generator.next(); -> 'Complete!'
  * generator.next(); -> 'Complete!'
  */
+class Generator {
+  constructor(array) {
+    this.array = array;
+    this.index = 0;
+  }
+
+  next() {
+    const nextElement = this.array[this.index] || 'Complete!';
+    this.index += 1;
+    return nextElement;
+  }
+}
+
+export default function createGenerator(array) {
+  return new Generator(array);
+}
