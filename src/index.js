@@ -7,6 +7,7 @@ import {
   arrPromiseResolveParallel,
   arrPromiseResolveConsecutively,
 } from './asynchronous-programming/task5';
+import { getResolvedPromise } from './asynchronous-programming/task6';
 
 console.log('task1');
 foo(5, createCb('cb'));
@@ -36,3 +37,6 @@ const urls = [
 ];
 arrPromiseResolveParallel(urls);
 arrPromiseResolveConsecutively(urls);
+
+console.log('task6');
+getResolvedPromise(500);
