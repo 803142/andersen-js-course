@@ -6,7 +6,7 @@ const parseJSON = (jsonStr, successCb, failureCb) => {
   }
 };
 
-const successCb = result => console.log(`Success parse!\n ${result}`);
+const successCb = result => console.log(`Success parse!\n ${JSON.stringify(result)}`);
 
 const failureCb = err => console.log(`Failure parse!\n ${err}`);
 
